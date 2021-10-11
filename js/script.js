@@ -186,7 +186,7 @@
       const articleAuthor = article.getAttribute('data-author');
 
       /* generate HTML of the link */
-      const authorHTML = '<a href="author-' + articleAuthor + '"><span>' + articleAuthor + '</span></a>';
+      const authorHTML = '<a href="#author-' + articleAuthor + '"><span>' + articleAuthor + '</span></a>';
       console.log(authorHTML);
       /* add generated code to html variable */
       html = html + authorHTML;
