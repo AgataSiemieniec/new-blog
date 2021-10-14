@@ -94,6 +94,20 @@
   };
   generateTitleLinks();
 
+  function calculateTagParams(tags){
+    const params = {
+      min: 9999,
+      max: 0
+    }
+
+    for(let tag in tags){
+      params.max = Math.max(tags[tag], params.max);
+      params.min = Math.min(tags[tag], params.min);
+      console.log(tag + ' is used ' + tags[tag] + ' times');
+    }
+    return params;
+  };
+
   function generateTags(){
       /* [NEW] create a new variable allTags with an empty object */
     let allTags = {};
@@ -105,6 +119,9 @@
       /* find tags wrapper */
       const tagsWrapper = article.querySelector(optArticleTagsSelector);
       console.log(tagsWrapper);
+
+      const tagsParams = calculateTagParams(allTags);
+      console.log('tagsParams', tagsParams)
 
       /* make html variable with empty string */
       let html = '';
