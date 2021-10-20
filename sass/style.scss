@@ -84,7 +84,7 @@ body {
     font-weight: bold;
   }
 
-    li{
+    &.tags li{
       display: inline;
       padding-left: 3px;
       .tag-size-5{

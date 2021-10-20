@@ -74,28 +74,28 @@ body {
   font-weight: bold;
 }
 
-.list li {
+.list.tags li {
   display: inline;
   padding-left: 3px;
 }
 
-.list li .tag-size-5 {
+.list.tags li .tag-size-5 {
   font-size: 38px;
 }
 
-.list li .tag-size-4 {
+.list.tags li .tag-size-4 {
   font-size: 32px;
 }
 
-.list li .tag-size-3 {
+.list.tags li .tag-size-3 {
   font-size: 24px;
 }
 
-.list li .tag-size-2 {
+.list.tags li .tag-size-2 {
   font-size: 20px;
 }
 
-.list li .tag-size-1 {
+.list.tags li .tag-size-1 {
   font-size: 15px;
 }
 
